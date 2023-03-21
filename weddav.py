@@ -36,7 +36,7 @@ class S(BaseHTTPRequestHandler):
 
 def run(server_class=HTTPServer, handler_class=S, port=8080):
     logging.basicConfig(level=logging.INFO)
-    server_address = ('', port)
+    server_address = ('0.0.0.0', port)
 
     # Configure WebDAV
     config = {
